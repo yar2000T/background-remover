@@ -27,10 +27,20 @@ jobs:
         run: |
           pyinstaller --noconfirm --onefile --windowed --name "remover-portable-${{ github.ref_name }}" remover.py
     
-      - name: Upload Release Asset
-        uses: softprops/action-gh-release@v1
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
         with:
           tag_name: ${{ github.ref_name }}
-          name: Release ${{ github.ref_name }}
-          files: |
-            ./dist/remover-portable-${{ github.ref_name }}.exe
+          release_name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload EXE to release
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: dist\remover-portable-${{ github.ref_name }}.exe
+          asset_name: remover-portable-${{ github.ref_name }}.exe
+          asset_content_type: application/octet-stream
