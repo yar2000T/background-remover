@@ -1,6 +1,6 @@
 # AI Background Remover
-
-![Python Version](https://img.shields.io/badge/Python-3.10+-blue?style=flat)
+ 
+![Python Version](https://img.shields.io/badge/Python-3.10+-blue?style=flat) [![Build EXE](https://github.com/yar2000T/background-remover/actions/workflows/build.yml/badge.svg)](https://github.com/yar2000T/background-remover/actions/workflows/build.yml) [![Release EXE](https://github.com/yar2000T/background-remover/actions/workflows/build_release.yml/badge.svg)](https://github.com/yar2000T/background-remover/actions/workflows/build_release.yml)
 
 A **modern AI-powered background remover** built with Python. Remove image backgrounds easily and save results as transparent PNG. Features a **sleek dark-themed UI**, auto-scaling previews, and easy-to-use buttons.
 
