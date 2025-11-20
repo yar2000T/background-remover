@@ -1,25 +1,3 @@
-# import time
-# import itertools
-# from threading import Thread
-# from TTS.api import TTS
-
-# tts = TTS(model_name="tts_models/en/vctk/vits", progress_bar=True, gpu=False)
-
-# speaker = "p230"
-
-# # Benchmark text
-# text = (
-    # "The quick brown fox jumps over the lazy dog. "
-    # "Today is a bright and sunny day, perfect for testing our new ESP32 temperature project. "
-    # "Every voice tells a story, and clarity makes that story easy to understand. "
-    # "Let's see how natural and expressive this voice can sound."
-# )
-
-# print(f"рџЋ™пёЏ Generating voice for {speaker}...")
-# tts.tts_to_file(text=text, speaker=speaker, file_path="voice_p230.wav")
-
-# print("\nвњ… Saved as voice_p230.wav")
-
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from PIL import Image, ImageTk
@@ -129,5 +107,3 @@ create_button(btn_frame, "Remove Background", remove_background)
 create_button(btn_frame, "Save Result", save_image)
 
 root.mainloop()
-
-.py
