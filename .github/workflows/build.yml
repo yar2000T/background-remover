@@ -28,7 +28,7 @@ jobs:
           pyinstaller --noconfirm --onefile --name remover-portable remover.py
     
       - name: Upload EXE as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: remover-portable
           path: dist\remover-portable.exe
