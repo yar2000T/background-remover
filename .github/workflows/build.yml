@@ -25,7 +25,7 @@ jobs:
     
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --noconfirm --onefile --name remover-portable remover.py
+          pyinstaller --noconfirm --onefile --windowed --name remover-portable remover.py
     
       - name: Upload EXE as Artifact
         uses: actions/upload-artifact@v4
