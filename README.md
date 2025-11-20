@@ -49,7 +49,7 @@ pip install rembg pillow onnxruntime
 1. Run the app:
 
 ```bash
-python rembg_gui.py
+python remover.py
 ```
 
 2. In the UI:
