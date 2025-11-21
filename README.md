@@ -81,4 +81,4 @@ python remover.py
 
 ## License
 
-MIT License – free to use and modify.
+GNU General Public License v3.0
